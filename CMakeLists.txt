@@ -14,6 +14,7 @@ project(${PACKAGE_NAME} C CXX)
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_COMPILER_IS_CLANG)
   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Wno-unknown-pragmas")
 endif()
+include(CMake/TestCPP11.cmake)
 
 # Find libraries
 find_package(OpenGL REQUIRED)
